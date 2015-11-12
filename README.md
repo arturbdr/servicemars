@@ -8,10 +8,10 @@ ToDo
 ----------
 - [ ] Definir camadas da aplicação - Previsão de conclusão :arrow_right: **13/11**
 - [ ] Implementação das classes de teste e respectivos testes unitários - Previsão de conclusão :arrow_right: **13/11**
-- [ ] Definir modelo canonico para exposição dos serviços - Previsão de conclusão :arrow_right: **14/11**
+- [ ] Definir modelo canônico para exposição dos serviços - Previsão de conclusão :arrow_right: **14/11**
 - [ ] Definição dos serviços a serem expostos - Previsão de conclusão :arrow_right: **14/11**
 - [ ] Definição do modelo de dados e respectivo framework de persistência - Previsão de conclusão :arrow_right: **14/11**
-- [ ] Implementação do logback com parametrização dos itens a serem logados **15/11**
+- [ ] Implementação do logback com parametrização dos itens a serem logados - Previsão de conclusão :arrow_right: **15/11**
 
 Done
 ----------
@@ -25,5 +25,7 @@ Definição Técnica Utilizada no Projeto
 - Para logs será utilizado framework logback V1.1.3 e serão feitos por aspectos utilizando a nomenclatura do pacote.
 - Para controle de dependências e build será utilizado Maven
 - Para exposição de serviços (REST) será utilizado Spring.
+- Para implementação dos testes unitários será utilizado TestNG V6.9.4 - http://testng.org/doc/index.html
+- Para Mock dos testes unitários será utilizado Mockito - 1.10.19 - http://mockito.org/
 
 
