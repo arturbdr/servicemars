@@ -6,6 +6,11 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
 		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd">
 
+	<context:component-scan base-package="br.com.elo7.domain.repository" />
 	<context:component-scan base-package="br.com.elo7.controller" />
+	<context:component-scan base-package="br.com.elo7.services" />
+	<context:component-scan base-package="br.com.elo7.domain" />
 	
+	<import resource="db-h2-config.xml" />
+
 </beans>

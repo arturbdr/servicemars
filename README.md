@@ -6,11 +6,6 @@ Para a realização do teste serão realizadas as seguintes atividades:
 
 ToDo
 ----------
-- [ ] Definir camadas da aplicação - Previsão de conclusão :arrow_right: **13/11**
-- [ ] Implementação das classes de teste e respectivos testes unitários - Previsão de conclusão :arrow_right: **14/11**
-- [ ] Definir modelo canônico para exposição dos serviços - Previsão de conclusão :arrow_right: **15/11**
-- [ ] Definição dos serviços a serem expostos - Previsão de conclusão :arrow_right: **15/11**
-- [ ] Definição do modelo de dados e respectivo framework de persistência - Previsão de conclusão :arrow_right: **15/11**
 - [ ] Implementação do logback (através do slf4j) com parametrização dos itens a serem logados - Previsão de conclusão :arrow_right: **16/11**
 - [ ] Disponinibilizar projeto no SOAPUi para testes dos serviços **17/11**
 
@@ -18,8 +13,13 @@ Done
 ----------
 - [x] Criar projeto no GitHub e respectiva descrição das atividades.
 - [x] Informar equipe da Elo7 sobre a URL para acompanhamento do projeto
+- [x] Definir camadas da aplicação - Previsão de conclusão :arrow_right: **13/11**
+- [x] Implementação das classes de teste e respectivos testes unitários - Previsão de conclusão :arrow_right: **14/11**
+- [x] Definição dos serviços a serem expostos - Previsão de conclusão :arrow_right: **15/11**
+- [x] Definição do modelo de dados e respectivo framework de persistência - Previsão de conclusão :arrow_right: **15/11**
 
-Definição Técnica Utilizada no Projeto
+
+Definição das Tecnologias Utilizadas no Projeto
 ----------
 - O projeto está sendo codificado em Java versão 7
 - Para logs será utilizado framework logback V1.1.3 e serão feitos por aspectos utilizando a nomenclatura do pacote.
