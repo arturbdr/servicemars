@@ -3,6 +3,7 @@ package br.com.elo7.domain;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -24,6 +25,10 @@ public class Probe {
 	private ProbeTO probeTO;
 	private Plateau plateau;
 	
+	public Probe(ProbeTO probeTO) {
+		this.probeTO = probeTO;
+	}
+
 	@Transient
 	public Coordinates getCoordinates() {
 		return this.probeTO.getCoordinates();
@@ -36,6 +41,7 @@ public class Probe {
 	}
 
 	@Id
+	@GeneratedValue
 	@Column(name="ID_PROBE")
 	public Long getId() {
 		return this.probeTO.getId();
@@ -57,6 +63,11 @@ public class Probe {
     @JoinColumn(name = "ID_PLATEAU")
 	public Plateau getPlateau() {
 		return plateau;
+	}
+	
+	@Transient
+	public ProbeTO getProbeTO() {
+		return this.probeTO;
 	}
 	
 	public Probe move(String command) {
@@ -109,6 +120,10 @@ public class Probe {
 		}
 		coordinates.setLongitude(longitude);
 		this.probeTO.setCoordinates(coordinates);
+	}
+	
+	public void setPlateau(Plateau plateau) {
+		this.plateau = plateau;
 	}
 	
 }

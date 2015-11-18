@@ -2,6 +2,7 @@ package br.com.elo7.domain.movestrategy;
 
 import br.com.elo7.domain.Direction;
 import br.com.elo7.domain.Probe;
+import br.com.elo7.domain.turntemplate.TurnFactory;
 
 public class TurnRightActionStrategy implements IActionStrategy{
 	
@@ -14,26 +15,9 @@ public class TurnRightActionStrategy implements IActionStrategy{
 	@Override
 	public Probe moveAction() {
 		
-		String direction = probe.getDirection();
-
-		switch (Direction.getDirection(direction)) {
-		case EAST:
-			probe.setDirection(Direction.SOUTH.getValue());
-			break;
-
-		case NORTH:
-			probe.setDirection(Direction.EAST.getValue());
-			break;
-
-		case SOUTH:
-			probe.setDirection(Direction.WEST.getValue());
-			break;
-
-		case WEST:
-			probe.setDirection(Direction.NORTH.getValue());
-			break;
-
-		}
+		String currentDirection = probe.getDirection();
+		Direction directionAfterTurn = TurnFactory.getTurnDirection(Direction.getDirection(currentDirection)).turnRight();
+		probe.setDirection(directionAfterTurn.getValue());
 		
 		return probe;
 	}

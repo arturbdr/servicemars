@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import br.com.elo7.domain.repository.PlateauRepository;
 import br.com.elo7.domain.to.Coordinates;
@@ -17,7 +18,16 @@ public class Plateau {
 	private Long id;
 	private PlateauTO plateauTO;
 
-	protected Plateau() {}
+	public Plateau() {}
+	
+	public Plateau(Coordinates coordinates) {
+		PlateauTO plateauTO = new PlateauTO();
+		plateauTO.setCoordinates(coordinates);
+	}
+
+	public Plateau(PlateauTO plateauTO) {
+		this.plateauTO = plateauTO;
+	}
 
 	@Id
 	@GeneratedValue
@@ -65,5 +75,10 @@ public class Plateau {
 		coordinates.setLongitude(longitude);
 		this.plateauTO.setCoordinates(coordinates);
 	}
-
+	
+	@Transient
+	public PlateauTO getPlateauTO() {
+		return this.plateauTO;
+	}
+	
 }
