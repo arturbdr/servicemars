@@ -31,4 +31,4 @@ Definição das Tecnologias Utilizadas no Projeto
 
 Duo Date do projeto
 ----------
-**19/Novembro/2015**
+**30/Novembro/2015**
