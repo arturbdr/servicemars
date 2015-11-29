@@ -31,4 +31,4 @@ Definição das Tecnologias Utilizadas no Projeto
 
 Duo Date do projeto
 ----------
-**30/Novembro/2015**
+Estou com excesso atividades no trabalho e não conseguirei concluir nesse prazo... Preciso replanejar **30/Novembro/2015**
